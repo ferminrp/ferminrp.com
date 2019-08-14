@@ -11,8 +11,6 @@ body {
   align-items: center;
   background-color: black;
   background-image: url('https://source.unsplash.com/KE0nC8-58MQ/1600x900');
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
