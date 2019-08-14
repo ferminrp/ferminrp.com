@@ -43,3 +43,11 @@ h1 {
   min-height: 190px;
   border-radius: 50%;
 }
+
+#icons a {
+  color: white;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+}
