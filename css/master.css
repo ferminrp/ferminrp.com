@@ -52,3 +52,12 @@ h1 {
   font-size: 36px;
   margin-right: 15px;
 }
+
+@media only screen and (max-width: 630px) {
+  .personalcard {
+    flex-direction: column;
+  }
+  .personalcard img {
+    order: 0;
+  }
+}
