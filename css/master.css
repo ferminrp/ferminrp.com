@@ -17,6 +17,7 @@ body {
 }
 
 .personalcard {
+  color: white;
   width: 600px;
   height: 150px;
   background-color: black;
@@ -25,4 +26,5 @@ body {
   border-radius: .625rem;
   border-width: 0;
   background-image: linear-gradient(103deg,#eb816a 0%,#e6a87c 100%);
+  padding: 15%;
 }
