@@ -60,4 +60,7 @@ h1 {
   .personalcard img {
     order: 0;
   }
+  .card-text {
+    order: 1;
+  }
 }
