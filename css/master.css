@@ -44,6 +44,9 @@ h1 {
   min-height: 190px;
   border-radius: 50%;
 }
+#icons {
+  margin-top: 27px;
+}
 
 #icons a {
   color: white;
