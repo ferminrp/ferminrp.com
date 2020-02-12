@@ -1,5 +1,5 @@
 .section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url('../images/cover.jpg');
   background-position: 50% 50%;
@@ -48,6 +48,7 @@
   background-image: url('../images/whatsapp.svg');
   background-position: 50% 50%;
   background-size: cover;
+  cursor: pointer;
 }
 
 .link-block-2 {
@@ -56,6 +57,7 @@
   background-image: url('../images/twitter.svg');
   background-position: 50% 50%;
   background-size: cover;
+  cursor: pointer;
 }
 
 .link-block-3 {
@@ -64,6 +66,7 @@
   background-image: url('../images/email.svg');
   background-position: 50% 50%;
   background-size: cover;
+  cursor: pointer;
 }
 
 .link-block-4 {
@@ -72,6 +75,7 @@
   background-image: url('../images/linkedin.svg');
   background-position: 50% 50%;
   background-size: cover;
+  cursor: pointer;
 }
 
 .heading {
@@ -147,6 +151,7 @@
 
 .body {
   margin-top: 0px;
+  padding-bottom: 60px;
 }
 
 .div-block-5 {
@@ -154,7 +159,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 9px;
+  margin-bottom: 20px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -219,7 +224,7 @@
   border-radius: 15px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a3ded8), to(#a3ded8));
   background-image: linear-gradient(180deg, #a3ded8, #a3ded8);
-  color: #434343;
+  color: #16877c;
 }
 
 .abandoned-project {
@@ -228,7 +233,48 @@
   border-radius: 15px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#edb4bd), to(#edb4bd));
   background-image: linear-gradient(180deg, #edb4bd, #edb4bd);
+  color: #b53348;
+}
+
+.text-block-4 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d2d2d2;
+  font-family: 'Open Sans', sans-serif;
   color: #434343;
+}
+
+.text-block-5 {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  border-style: none;
+  border-width: 0px;
+  border-color: #45caac;
+  border-radius: 10px;
+  background-color: #c6c6c6;
+  font-family: 'Open Sans', sans-serif;
+  color: #434343;
+  font-weight: 400;
+}
+
+.div-block-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 991px) {
