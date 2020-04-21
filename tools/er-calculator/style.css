@@ -1,0 +1,136 @@
+body {
+  font-family: Lato, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  color: #3e3e3e;
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  margin-top: 60px;
+  border: 1px solid #6558f5;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 10px 10px 13px -4px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 10px 10px 13px -4px rgba(176, 176, 176, 1);
+  box-shadow: 10px 10px 13px -4px rgba(176, 176, 176, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 50px 50px;
+}
+
+.form h4 {
+  text-align: center;
+  color: #3e3e3e;
+}
+
+.form input {
+  border: 2px solid #c8d0d8;
+  border-radius: 3px;
+  height: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form button {
+  border-radius: 3px;
+  border: none;
+  background-color: #6558f5;
+  text-decoration: none;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.profileCard {
+  border: 2px solid #c8d0d8;
+  display: flex;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 50px 50px 50px 50px;
+  border-radius: 5px;
+}
+
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.kpis {
+  display: flex;
+}
+
+.kpis div:first-child {
+  margin-right: 30px;
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+.post {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+.overlay {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.likes,
+.comments {
+  color: white;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: gray;
+}
+
+.footer a {
+  color: gray;
+}
+
+
+@media screen and (max-width: 480px) {
+  .profilePicture {
+    display: none;
+  }
+}
