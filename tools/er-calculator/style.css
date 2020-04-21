@@ -134,4 +134,7 @@ h1 {
   .profilePicture {
     display: none;
   }
+  h1 {
+    font-size: 36px;
+  }
 }
