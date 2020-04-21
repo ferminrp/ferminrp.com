@@ -15,7 +15,7 @@
 <body>
 
   <div id="app">
-    <h1>Calculadora de Engagement Rate Para Instagram</h1>
+    <h1>Calculadora de Engagement Rate <span class="highlight">Para Instagram</span></h1>
     <div class="form">
       <h4>¿Que cuenta queres analizar?</h4>
       <input placeholder="therock" v-model="user" @keyup.enter="updateData()" type="text">
@@ -33,7 +33,7 @@
             </div>
             <div>
               <p>{{Number(following).toLocaleString()}} Following</p>
-              <p>{{ engagementRate }} Eng. Rate</p>
+              <p class="strong highlight">{{ engagementRate }} Eng. Rate</p>
             </div>
           </div>
 
