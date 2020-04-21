@@ -1,41 +1,60 @@
-<div id="app">
-  <h1>Calculadora de Engagement Rate Para Instagram</h1>
-  <div class="form">
-    <h4>¿Que cuenta queres analizar?</h4>
-    <input placeholder="therock" v-model="user" @keyup.enter="updateData()" type="text">
-    <button @click="updateData()">Calcular</button>
-  </div>
-  <div class="profileInfo" v-if="info !== null">
-    <div class="profileCard">
-      <div v-bind:style="{ backgroundImage: 'url(' + this.profilePic + ')' }" class="profilePicture"></div>
-      <div class="userInfo">
-        <h3>{{name}}</h3>
-        <div class="kpis">
-          <div>
-            <p>{{Number(followers).toLocaleString()}} Followers</p>
-            <p>{{totalEngagements.toLocaleString()}} Engagements</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Engagement Rate Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>Calculadora de Engagement Rate Para Instagram</h1>
+    <div class="form">
+      <h4>¿Que cuenta queres analizar?</h4>
+      <input placeholder="therock" v-model="user" @keyup.enter="updateData()" type="text">
+      <button @click="updateData()">Calcular</button>
+    </div>
+    <div class="profileInfo" v-if="info !== null">
+      <div class="profileCard">
+        <div v-bind:style="{ backgroundImage: 'url(' + this.profilePic + ')' }" class="profilePicture"></div>
+        <div class="userInfo">
+          <h3>{{name}}</h3>
+          <div class="kpis">
+            <div>
+              <p>{{Number(followers).toLocaleString()}} Followers</p>
+              <p>{{totalEngagements.toLocaleString()}} Engagements</p>
+            </div>
+            <div>
+              <p>{{Number(following).toLocaleString()}} Following</p>
+              <p>{{ engagementRate }} Eng. Rate</p>
+            </div>
           </div>
-          <div>
-            <p>{{Number(following).toLocaleString()}} Following</p>
-            <p>{{ engagementRate }} Eng. Rate</p>
+
+        </div>
+      </div>
+      <div class="posteos">
+        <div class="posts-grid">
+          <div v-bind:style="{ backgroundImage: 'url(' + post.node.display_url + ')' }" v-for="post in posts" :key="post.message" class="post">
+            <div class="overlay">
+              <p class="likes">❤ {{ post.node.edge_liked_by.count.toLocaleString() }}</p>
+              <p class="comments">💬 {{ post.node.edge_media_to_comment.count.toLocaleString() }}</p>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-      </div>
-    </div>
-    <div class="posteos">
-      <div class="posts-grid">
-        <div v-bind:style="{ backgroundImage: 'url(' + post.node.display_url + ')' }" v-for="post in posts" :key="post.message" class="post">
-          <div class="overlay">
-            <p class="likes">❤ {{ post.node.edge_liked_by.count.toLocaleString() }}</p>
-            <p class="comments">💬 {{ post.node.edge_media_to_comment.count.toLocaleString() }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <p class="footer">Built with ❤ by <a href="https://ferminrp.com/">ferminrp</a></p>
+
   </div>
-  
-  
-  <p class="footer">Built with ❤ by <a href="https://ferminrp.com/">ferminrp</a></p>
+</body>
 
-</div>
+</html>
