@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+input {
+  max-width: 300px;
+}
+
+#propina {
+  margin-top: 30px
+}
