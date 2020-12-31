@@ -1,4 +1,6 @@
-.notion-full-page {
-  margin-top: 50px!important;
-  max-width: 90%!important;
+@media only screen and (max-width: 600px) {
+  .notion-full-page {
+    margin-top: 50px!important;
+    max-width: 90%!important;
+  }
 }
