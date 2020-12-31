@@ -2,6 +2,6 @@ body {
   background-color:"black";
 }
 
-.notion-page .notion-page-offset .notion-full-page {
-  margin-top: 50px;
+.notion-full-page {
+  margin-top: 50px!important;
 }
