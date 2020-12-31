@@ -1,7 +1,4 @@
-body {
-  background-color:"black";
-}
-
 .notion-full-page {
   margin-top: 50px!important;
+  max-width: 90%;
 }
