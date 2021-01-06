@@ -19,6 +19,10 @@
 	background-color: #555;
 }
 
+.header-link:hover {
+	border-bottom: 2px solid #9C1EE6!important;
+}
+
 @media only screen and (max-width: 600px) {
   .notion-full-page {
     margin-top: 50px!important;
