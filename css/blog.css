@@ -6,6 +6,8 @@
 	font-style: italic!important;
 	font-size: 1em!important;
 	border-left: 3px solid #9C1EE6!important;
+	background-color: ##9C1EE610!important;
+	padding: .8em .9em!important;
 }
 
 .notion-page-scroller::-webkit-scrollbar-track {
