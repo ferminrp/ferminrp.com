@@ -1,0 +1,6 @@
+# Group 2
+User-agent: *
+Allow: /
+Disallow: /emergency.html
+
+Sitemap: https://ferminrp.com/text-sitemap.txt
